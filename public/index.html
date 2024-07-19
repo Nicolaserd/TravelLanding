@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Travel Project</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <nav>
 
     </nav>
@@ -17,11 +17,11 @@
 
     </div>
     <section class="w-full h-screen">
-        <div id="home">
-            <div class="w-full h-3/4">
+        <div id="home" class="w-full h-full">
+            <div class="w-full h-full relative overflow-hidden">
                 <div class="w-full h-full flex flex-col absolute space-y-80 py-4 items-center">
-                    <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco">
-                    <button class="bg-white text-xl text-primary font-semibold p-4 w-36 rounded-full shadow-sm">
+                    <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco">
+                    <button class="bg-white text-xl text-primary font-semibold p-4 w-36 rounded-full shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110">
                         Explorar
                     </button>
                 </div>
@@ -30,19 +30,80 @@
                 </div>
             </div>
         </div>
-        <div id="recomendados" class="p-20">
-            <div class=" w-48 h-64 bg-red-200 rounded-lg">
-                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover ">
-                    
+        <div id="recomendados" class="p-6">
+            <h1 class="text-3xl font-semibold text-primary"> Recomendados</h1>
+
+            <div class="w-auto h-80 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover ">
+                        
+                    </div>
+                    <div class="bg-secondary w-full h-2/5 rounded-b-lg">
+                        <h5 class="text-white text-lg text-blod px-4 py-2 ">Norway</h5>
+                        <h6 class="text-white text-md px-4">Paisajes increíbles</h6>
+                    </div>
                 </div>
-                <div class="bg-secondary w-full h-2/5 rounded-b-lg">
-                    <h5 class="text-white text-lg text-blod">Norway</h5>
-                    <h6 class="">Paisajes increíbles</h6>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover ">
+                        
+                    </div>
+                    <div class="bg-white w-full h-2/5 rounded-b-lg">
+                        <h5 class="text-terciary text-lg text-blod px-4 py-2 ">New York</h5>
+                        <h6 class="text-terciary text-md px-4">La gran manzana</h6>
+                    </div>
                 </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover ">
+                        
+                    </div>
+                    <div class="bg-secondary w-full h-2/5 rounded-b-lg">
+                        <h5 class="text-white text-lg text-blod px-4 py-2 ">Yosemite</h5>
+                        <h6 class="text-white text-md px-4">Tomarse un descanso </h6>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover ">
+                        
+                    </div>
+                    <div class="bg-white w-full h-2/5 rounded-b-lg">
+                        <h5 class="text-terciary text-lg text-blod px-4 py-2 ">seattle</h5>
+                        <h6 class="text-terciary text-md px-4">Gran Ciudad</h6>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover ">
+                        
+                    </div>
+                    <div class="bg-secondary w-full h-2/5 rounded-b-lg">
+                        <h5 class="text-white text-lg text-blod px-4 py-2 ">Switzerland</h5>
+                        <h6 class="text-white text-md px-4">Gran Ciudad</h6>
+                    </div>
+                </div>
+
             </div>
 
+        
+
         </div>
-        <div id="rentas_destacadas">
+        <div class="px-6 h-full w-ful" id="rentas_destacadas">
+            <div>
+                <h1 class="text-3xl text-primary font-semibold pb-6">Rentas destacadas</h1>
+            </div>
+            <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+                    <h5 class="CardTittle">Chicago</h5>
+                    <h6 class="text-sm pl-8 text-black mr-24">2 Habitaciones, baño y cocina</h6>
+                </div>
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+                    <h5 class="CardTittle">Chicago</h5>
+                    <h6 class="text-sm pl-8 text-black mr-24">2 Habitaciones, baño y cocina</h6>
+                </div>
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+                    <h5 class="CardTittle">Chicago</h5>
+                    <h6 class="text-sm pl-8 text-black mr-24">2 Habitaciones, baño y cocina</h6>
+                </div>
+            </div>
 
         </div>
     </section>
