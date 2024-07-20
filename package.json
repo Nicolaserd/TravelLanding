@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css ",
-    "build:css": "postcss src/css/tailwind.css -o public/css/tailwind.css"
+    "build:css": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "build": "npm run build:css" 
   },
   "author": "",
   "license": "ISC",
